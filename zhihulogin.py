@@ -19,9 +19,9 @@ def login():
 
     login_data = {
         '_xsrf':_xsrf,                                      #跨站请求伪造
-        'password':'549897521@qq.com',
+        'password':'XXXXX',
         'remember_me':'true',
-        'email':'dao1youdao'
+        'email':'549897521@qq.com'
     }
     session.post('https://www.zhihu.com/#signin',data = login_data,headers = header)
     res = session.get('http://www.zhihu.com')
